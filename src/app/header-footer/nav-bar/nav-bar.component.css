@@ -1,0 +1,15 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+.mat-toolbar {
+  color: #4caf50;
+  background-color: #fff;
+}
+.bg-green {
+  color: #fff;
+  background-color: #4caf50;
+}
+.bg-green-reverse {
+  color: #4caf50;
+  background-color: #fff;
+}

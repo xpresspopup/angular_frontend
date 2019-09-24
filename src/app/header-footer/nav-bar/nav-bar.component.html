@@ -1,0 +1,17 @@
+<mat-toolbar class="mat-elevation-z8">
+  <span>Angular Material Tutorial</span>
+  <span class="example-spacer"></span>
+  <div fxLayout="row" fxShow="true" fxHide.lt-md="true">
+    <button [routerLink]="['/login']" class="mr-2" color='primary' mat-raised-button>Sign Up</button>
+    <button [routerLink]="['/signup']" class="bg-green-reverse" mat-raised-button>Login</button>
+  </div>
+  <div fxShow="true" fxHide.gt-sm="true">
+    <button mat-icon-button [mat-menu-trigger-for]="menu">
+      <mat-icon>more_vert</mat-icon>
+    </button>
+  </div>
+</mat-toolbar>
+<mat-menu x-position="before" #menu="matMenu">
+  <a class="text-success" mat-menu-item>Login</a>
+  <a class="text-success" mat-menu-item>SignUp</a>
+</mat-menu>

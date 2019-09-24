@@ -7,13 +7,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { AngularMaterialModule } from './angular-material.module';
 import { ElModule } from 'element-angular';
-import { LayoutModule } from '@angular/cdk/layout';
+import { NavBarComponent } from './header-footer/nav-bar/nav-bar.component';
+import { FooterComponent } from './header-footer/footer/footer.component';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, NavBarComponent, FooterComponent, HomeComponent],
   imports: [
     AppRoutingModule,
     BrowserModule,
@@ -22,8 +25,8 @@ import { LayoutModule } from '@angular/cdk/layout';
     FormsModule,
     HttpClientModule,
     AngularMaterialModule,
+    FlexLayoutModule,
     ElModule.forRoot(),
-    LayoutModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
